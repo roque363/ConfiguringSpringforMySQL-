@@ -42,6 +42,7 @@ public class HomeController {
 		return "home";
 	}
 	
+	//Lista la tabla Usuarios de la base de datos FindBank
 	@RequestMapping(value = "/lista", method = RequestMethod.POST)
 	public void listUsuario(@ModelAttribute("SpringWeb") Usuario usuario, ModelMap model) {
 		UsuarioDAO dao = new UsuarioDAOImpl();
